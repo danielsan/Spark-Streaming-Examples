@@ -5,7 +5,7 @@ Spark Streaming examples using python
 
     mkdir SOME_DIRECORY
     cd SOME_DIRECORY
-    git clone https://github.com/danielsan/	spark-streaming-examples.git
+    git clone https://github.com/danielsan/Spark-Streaming-Examples.git
 
 ## Preparing everything
 The `setup.sh` script assumes that you already have curl, python, mongodb and Java installed in your system.
@@ -14,14 +14,16 @@ Before running the [setup.sh](setup.sh) script I recommend you to see the source
 
 **This will take several minutes**
 
-    cd mongodb-analytics-examples && $SHELL ./setup.sh
+    cd Spark-Streaming-Examples && $SHELL ./setup.sh
 
-## Running the analysis with Spark
+## Running the examples with Spark
 
-Assuming your working directory (your current directory in your shell) is the `mongodb-analytics-examples` one
+Assuming your working directory (your current directory in your shell) is the `Spark-Streaming-Examples` one, you can run the command as follow:
 
-Before running the [spark-ohlcbars-example.submit.sh](spark-ohlcbars-example.submit.sh) script I recommend you to see the source code and understand how to submit a python script to Spark.
+    ./pyspark.submit.sh PYTHON_FILE.py
 
-    ./spark-ohlcbars-example.submit.sh
+To run the `spark-streaming-reading-files-from-a-folder.py` for exemple you can just do this:
 
-Tha script will submit `spark-ohlcbars-example.py` to Spark using `spark-submit`
+    ./pyspark.submit.sh spark-streaming-reading-files-from-a-folder.py
+
+
